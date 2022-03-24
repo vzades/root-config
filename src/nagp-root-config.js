@@ -22,23 +22,23 @@ const layoutEngine = constructLayoutEngine({
 
 applications.forEach(registerApplication);
 
-// registerApplication({
-//   name: "@nagp/navbar",
-//   app: () => System.import("@nagp/navbar"),
-//   activeWhen: ["/"]
-// });
+registerApplication({
+  name: "@nagp/navbar",
+  app: () => System.import("@nagp/navbar"),
+  activeWhen: ["/"]
+});
 
-// registerApplication({
-//   name: "@nagp/account",
-//   app: () => System.import("@nagp/account"),
-//   activeWhen: ["/account"]
-// });
+registerApplication({
+  name: "@nagp/account",
+  app: () => System.import("@nagp/account"),
+  activeWhen: ["/account"]
+});
 
-// registerApplication({
-//   name: "@nagp/admin",
-//   app: () => System.import("@nagp/admin"),
-//   activeWhen: ["/admin"]
-// });
+registerApplication({
+  name: "@nagp/admin",
+  app: () => System.import("@nagp/admin"),
+  activeWhen: ["/admin"]
+});
 
 start({
   urlRerouteOnly: true,
